@@ -11,6 +11,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "postbuild": "npm run copy-assets",
+    "deploy": "sh tasks/deploy.sh",
     "prewatch": "npm run copy-assets",
     "watch": "tsc -w",
     "precopy-assets": "mkdir -p dist",
