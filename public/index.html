@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Things to do when bored!</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Things to do when you're bored...</h1>
+  </header>
+  <main id="container">
+    <blockquote id="thing"></blockquote>
+
+    <div>
+      <button id="anotherIdea"><i class="icon">↺</i><span>Give me another idea</span></button>
+      <button id="feelingLucky"><span>Feeling Lucky</span><i class="icon">⎋</i></button>
+    </div>
+  </main>
+
+  <footer>
+    <p class="align-left">Source: <a href="https://www.mydomaine.com/things-to-do-when-bored">mydomaine.com</a></p>
+    <p class="align-right">
+      <a href="https://github.com/deshmukhmayur/bored-no-more">GitHub</a>
+      |
+      &copy; 2018 <a href="http://deshmukhmayur.com">Mayur Deshmukh</a>
+    </p>
+  </footer>
+
+  <!-- Main JS file -->
+  <script src="./app.js"></script>
+  <script>
+    window.addEventListener('load', function() {
+      new AppShell().bootstrap()
+    })
+  </script>
+</body>
+</html>
