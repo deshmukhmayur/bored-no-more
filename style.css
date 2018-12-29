@@ -1,0 +1,149 @@
+* {
+  transition: .2s all ease-in;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.03rem;
+
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+body.light {
+  color: white !important;
+}
+body.dark {
+  color: black !important;
+}
+
+header {
+  text-align: center;
+  padding: 1rem 2rem;
+  opacity: .5;
+}
+header > h1 {
+  margin: 0;
+  font-weight: 200;
+  font-size: 2rem;
+}
+
+main {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main > blockquote {
+  font-size: 3rem;
+  position: relative;
+  margin-bottom: 6rem;
+}
+main > blockquote > span {
+  position: absolute;
+  opacity: 0.25;
+  right: -2.75rem;
+  bottom: -4rem;
+  font-size: 2.25rem;
+}
+main > blockquote > p {
+  margin: 0;
+  text-align: center;
+}
+
+main > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main > div > button {
+  font-size: 1.5rem;
+  border: none;
+  padding: 0 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 3.5rem;
+  color: inherit;
+  background: rgba(255,255,255,0.15);
+  border-radius: .5rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.16);
+  outline: none;
+}
+main > div > button:hover {
+  background: rgba(255,255,255,0.25);
+}
+main > div > button:active {
+  background: rgba(255,255,255,0.05);
+  box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.16);
+}
+@media screen and (min-width: 600px) {
+  #anotherIdea {
+    margin-right: 2rem;
+    order: 1;
+  }
+  #feelingLucky {
+    order: 2;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+}
+footer > p {
+  margin: 0;
+  font-weight: 300;
+  opacity: .7;
+}
+footer > p.align-right {
+  text-align: right;
+}
+footer > p > a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 600;
+}
+a {
+  position: relative;
+}
+a::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: black;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  color: inherit;
+
+  transform: scaleX(0);
+  transition: .2s all ease-in;
+}
+a:hover::after {
+  transform: scalex(1);
+}
+body.light a::after {
+  background: white;
+}
+
+i.icon {
+  font-style: normal;
+  font-size: 1.75rem;
+  font-weight: 300;
+}
+i.icon:first-child {
+  margin-right: .5rem;
+}
+i.icon:last-child {
+  margin-left: .5rem;
+}
